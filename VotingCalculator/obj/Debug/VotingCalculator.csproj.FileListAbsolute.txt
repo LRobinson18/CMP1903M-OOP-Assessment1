@@ -1,0 +1,9 @@
+C:\Users\lewis\source\repos\VotingCalculator\VotingCalculator\bin\Debug\VotingCalculator.exe.config
+C:\Users\lewis\source\repos\VotingCalculator\VotingCalculator\bin\Debug\VotingCalculator.exe
+C:\Users\lewis\source\repos\VotingCalculator\VotingCalculator\bin\Debug\VotingCalculator.pdb
+C:\Users\lewis\source\repos\VotingCalculator\VotingCalculator\obj\Debug\VotingCalculator.csprojAssemblyReference.cache
+C:\Users\lewis\source\repos\VotingCalculator\VotingCalculator\obj\Debug\VotingCalculator.Form1.resources
+C:\Users\lewis\source\repos\VotingCalculator\VotingCalculator\obj\Debug\VotingCalculator.Properties.Resources.resources
+C:\Users\lewis\source\repos\VotingCalculator\VotingCalculator\obj\Debug\VotingCalculator.csproj.GenerateResource.cache
+C:\Users\lewis\source\repos\VotingCalculator\VotingCalculator\obj\Debug\VotingCalculator.exe
+C:\Users\lewis\source\repos\VotingCalculator\VotingCalculator\obj\Debug\VotingCalculator.pdb
