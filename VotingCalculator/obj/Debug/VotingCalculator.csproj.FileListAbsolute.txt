@@ -16,3 +16,12 @@ C:\Users\lewis\Source\Repos\voting-calculator\VotingCalculator\obj\Debug\VotingC
 C:\Users\lewis\Source\Repos\voting-calculator\VotingCalculator\obj\Debug\VotingCalculator.csproj.GenerateResource.cache
 C:\Users\lewis\Source\Repos\voting-calculator\VotingCalculator\obj\Debug\VotingCalculator.exe
 C:\Users\lewis\Source\Repos\voting-calculator\VotingCalculator\obj\Debug\VotingCalculator.pdb
+C:\Users\computing\Source\Repos\voting-calculator\VotingCalculator\bin\Debug\VotingCalculator.exe.config
+C:\Users\computing\Source\Repos\voting-calculator\VotingCalculator\bin\Debug\VotingCalculator.exe
+C:\Users\computing\Source\Repos\voting-calculator\VotingCalculator\bin\Debug\VotingCalculator.pdb
+C:\Users\computing\Source\Repos\voting-calculator\VotingCalculator\obj\Debug\VotingCalculator.csprojAssemblyReference.cache
+C:\Users\computing\Source\Repos\voting-calculator\VotingCalculator\obj\Debug\VotingCalculator.VotingCalculator.resources
+C:\Users\computing\Source\Repos\voting-calculator\VotingCalculator\obj\Debug\VotingCalculator.Properties.Resources.resources
+C:\Users\computing\Source\Repos\voting-calculator\VotingCalculator\obj\Debug\VotingCalculator.csproj.GenerateResource.cache
+C:\Users\computing\Source\Repos\voting-calculator\VotingCalculator\obj\Debug\VotingCalculator.exe
+C:\Users\computing\Source\Repos\voting-calculator\VotingCalculator\obj\Debug\VotingCalculator.pdb
