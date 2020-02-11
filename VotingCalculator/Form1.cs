@@ -180,7 +180,7 @@ namespace VotingCalculator
                     labelResult.ForeColor = System.Drawing.Color.Red;
                 }
             }
-
+            //
             textBoxYesStates.Text = Convert.ToString(YesStates);
             textBoxNoStates.Text = Convert.ToString(NoStates);
             textBoxAbStates.Text = Convert.ToString(AbStates);
