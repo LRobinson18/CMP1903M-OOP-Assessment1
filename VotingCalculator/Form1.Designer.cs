@@ -86,6 +86,24 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
+            this.comboBoxRule = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBoxYesStates = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBoxNoStates = new System.Windows.Forms.TextBox();
+            this.textBoxAbStates = new System.Windows.Forms.TextBox();
+            this.textBoxAbPop = new System.Windows.Forms.TextBox();
+            this.textBoxNoPop = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.textBoxYesPop = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.labelResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -275,7 +293,8 @@
             this.comboBoxAustria.Name = "comboBoxAustria";
             this.comboBoxAustria.Size = new System.Drawing.Size(121, 21);
             this.comboBoxAustria.TabIndex = 17;
-            this.comboBoxAustria.SelectedIndexChanged += new System.EventHandler(this.Austria_SelectedIndexChanged);
+            this.comboBoxAustria.Text = "Yes";
+            this.comboBoxAustria.SelectedIndexChanged += new System.EventHandler(this.Country_SelectedIndexChanged);
             // 
             // comboBoxBelgium
             // 
@@ -288,6 +307,8 @@
             this.comboBoxBelgium.Name = "comboBoxBelgium";
             this.comboBoxBelgium.Size = new System.Drawing.Size(121, 21);
             this.comboBoxBelgium.TabIndex = 18;
+            this.comboBoxBelgium.Text = "Yes";
+            this.comboBoxBelgium.SelectedIndexChanged += new System.EventHandler(this.Country_SelectedIndexChanged);
             // 
             // comboBoxBulgaria
             // 
@@ -300,6 +321,8 @@
             this.comboBoxBulgaria.Name = "comboBoxBulgaria";
             this.comboBoxBulgaria.Size = new System.Drawing.Size(121, 21);
             this.comboBoxBulgaria.TabIndex = 19;
+            this.comboBoxBulgaria.Text = "Yes";
+            this.comboBoxBulgaria.SelectedIndexChanged += new System.EventHandler(this.Country_SelectedIndexChanged);
             // 
             // comboBoxCroatia
             // 
@@ -312,6 +335,8 @@
             this.comboBoxCroatia.Name = "comboBoxCroatia";
             this.comboBoxCroatia.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCroatia.TabIndex = 20;
+            this.comboBoxCroatia.Text = "Yes";
+            this.comboBoxCroatia.SelectedIndexChanged += new System.EventHandler(this.Country_SelectedIndexChanged);
             // 
             // comboBoxCyprus
             // 
@@ -324,6 +349,8 @@
             this.comboBoxCyprus.Name = "comboBoxCyprus";
             this.comboBoxCyprus.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCyprus.TabIndex = 21;
+            this.comboBoxCyprus.Text = "Yes";
+            this.comboBoxCyprus.SelectedIndexChanged += new System.EventHandler(this.Country_SelectedIndexChanged);
             // 
             // comboBoxCzechRepublic
             // 
@@ -336,6 +363,8 @@
             this.comboBoxCzechRepublic.Name = "comboBoxCzechRepublic";
             this.comboBoxCzechRepublic.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCzechRepublic.TabIndex = 22;
+            this.comboBoxCzechRepublic.Text = "Yes";
+            this.comboBoxCzechRepublic.SelectedIndexChanged += new System.EventHandler(this.Country_SelectedIndexChanged);
             // 
             // comboBoxDenmark
             // 
@@ -348,6 +377,7 @@
             this.comboBoxDenmark.Name = "comboBoxDenmark";
             this.comboBoxDenmark.Size = new System.Drawing.Size(121, 21);
             this.comboBoxDenmark.TabIndex = 23;
+            this.comboBoxDenmark.Text = "Yes";
             // 
             // comboBoxEstonia
             // 
@@ -360,6 +390,7 @@
             this.comboBoxEstonia.Name = "comboBoxEstonia";
             this.comboBoxEstonia.Size = new System.Drawing.Size(121, 21);
             this.comboBoxEstonia.TabIndex = 24;
+            this.comboBoxEstonia.Text = "Yes";
             // 
             // comboBoxFinland
             // 
@@ -372,6 +403,7 @@
             this.comboBoxFinland.Name = "comboBoxFinland";
             this.comboBoxFinland.Size = new System.Drawing.Size(121, 21);
             this.comboBoxFinland.TabIndex = 25;
+            this.comboBoxFinland.Text = "Yes";
             // 
             // comboBoxFrance
             // 
@@ -384,6 +416,7 @@
             this.comboBoxFrance.Name = "comboBoxFrance";
             this.comboBoxFrance.Size = new System.Drawing.Size(121, 21);
             this.comboBoxFrance.TabIndex = 26;
+            this.comboBoxFrance.Text = "Yes";
             // 
             // comboBoxGermany
             // 
@@ -396,6 +429,7 @@
             this.comboBoxGermany.Name = "comboBoxGermany";
             this.comboBoxGermany.Size = new System.Drawing.Size(121, 21);
             this.comboBoxGermany.TabIndex = 27;
+            this.comboBoxGermany.Text = "Yes";
             // 
             // comboBoxGreece
             // 
@@ -408,6 +442,7 @@
             this.comboBoxGreece.Name = "comboBoxGreece";
             this.comboBoxGreece.Size = new System.Drawing.Size(121, 21);
             this.comboBoxGreece.TabIndex = 28;
+            this.comboBoxGreece.Text = "Yes";
             // 
             // comboBoxHungary
             // 
@@ -420,6 +455,7 @@
             this.comboBoxHungary.Name = "comboBoxHungary";
             this.comboBoxHungary.Size = new System.Drawing.Size(121, 21);
             this.comboBoxHungary.TabIndex = 29;
+            this.comboBoxHungary.Text = "Yes";
             // 
             // comboBoxIreland
             // 
@@ -432,6 +468,7 @@
             this.comboBoxIreland.Name = "comboBoxIreland";
             this.comboBoxIreland.Size = new System.Drawing.Size(121, 21);
             this.comboBoxIreland.TabIndex = 30;
+            this.comboBoxIreland.Text = "Yes";
             // 
             // comboBoxItaly
             // 
@@ -444,6 +481,7 @@
             this.comboBoxItaly.Name = "comboBoxItaly";
             this.comboBoxItaly.Size = new System.Drawing.Size(121, 21);
             this.comboBoxItaly.TabIndex = 59;
+            this.comboBoxItaly.Text = "Yes";
             // 
             // comboBoxLatvia
             // 
@@ -456,6 +494,7 @@
             this.comboBoxLatvia.Name = "comboBoxLatvia";
             this.comboBoxLatvia.Size = new System.Drawing.Size(121, 21);
             this.comboBoxLatvia.TabIndex = 58;
+            this.comboBoxLatvia.Text = "Yes";
             // 
             // comboBoxLithuania
             // 
@@ -468,6 +507,7 @@
             this.comboBoxLithuania.Name = "comboBoxLithuania";
             this.comboBoxLithuania.Size = new System.Drawing.Size(121, 21);
             this.comboBoxLithuania.TabIndex = 57;
+            this.comboBoxLithuania.Text = "Yes";
             // 
             // comboBoxLuxembourg
             // 
@@ -480,6 +520,7 @@
             this.comboBoxLuxembourg.Name = "comboBoxLuxembourg";
             this.comboBoxLuxembourg.Size = new System.Drawing.Size(121, 21);
             this.comboBoxLuxembourg.TabIndex = 56;
+            this.comboBoxLuxembourg.Text = "Yes";
             // 
             // comboBoxMalta
             // 
@@ -492,6 +533,7 @@
             this.comboBoxMalta.Name = "comboBoxMalta";
             this.comboBoxMalta.Size = new System.Drawing.Size(121, 21);
             this.comboBoxMalta.TabIndex = 55;
+            this.comboBoxMalta.Text = "Yes";
             // 
             // comboBoxNetherlands
             // 
@@ -504,6 +546,7 @@
             this.comboBoxNetherlands.Name = "comboBoxNetherlands";
             this.comboBoxNetherlands.Size = new System.Drawing.Size(121, 21);
             this.comboBoxNetherlands.TabIndex = 54;
+            this.comboBoxNetherlands.Text = "Yes";
             // 
             // comboBoxPoland
             // 
@@ -516,6 +559,7 @@
             this.comboBoxPoland.Name = "comboBoxPoland";
             this.comboBoxPoland.Size = new System.Drawing.Size(121, 21);
             this.comboBoxPoland.TabIndex = 53;
+            this.comboBoxPoland.Text = "Yes";
             // 
             // comboBoxPortugal
             // 
@@ -528,6 +572,7 @@
             this.comboBoxPortugal.Name = "comboBoxPortugal";
             this.comboBoxPortugal.Size = new System.Drawing.Size(121, 21);
             this.comboBoxPortugal.TabIndex = 52;
+            this.comboBoxPortugal.Text = "Yes";
             // 
             // comboBoxRomania
             // 
@@ -540,6 +585,7 @@
             this.comboBoxRomania.Name = "comboBoxRomania";
             this.comboBoxRomania.Size = new System.Drawing.Size(121, 21);
             this.comboBoxRomania.TabIndex = 51;
+            this.comboBoxRomania.Text = "Yes";
             // 
             // comboBoxSlovakia
             // 
@@ -552,6 +598,7 @@
             this.comboBoxSlovakia.Name = "comboBoxSlovakia";
             this.comboBoxSlovakia.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSlovakia.TabIndex = 50;
+            this.comboBoxSlovakia.Text = "Yes";
             // 
             // comboBoxSlovenia
             // 
@@ -564,6 +611,7 @@
             this.comboBoxSlovenia.Name = "comboBoxSlovenia";
             this.comboBoxSlovenia.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSlovenia.TabIndex = 49;
+            this.comboBoxSlovenia.Text = "Yes";
             // 
             // comboBoxSpain
             // 
@@ -576,6 +624,7 @@
             this.comboBoxSpain.Name = "comboBoxSpain";
             this.comboBoxSpain.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSpain.TabIndex = 48;
+            this.comboBoxSpain.Text = "Yes";
             // 
             // comboBoxSweden
             // 
@@ -588,6 +637,7 @@
             this.comboBoxSweden.Name = "comboBoxSweden";
             this.comboBoxSweden.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSweden.TabIndex = 47;
+            this.comboBoxSweden.Text = "Yes";
             // 
             // label18
             // 
@@ -754,11 +804,214 @@
             this.label32.TabIndex = 31;
             this.label32.Text = "Country";
             // 
+            // comboBoxRule
+            // 
+            this.comboBoxRule.FormattingEnabled = true;
+            this.comboBoxRule.Items.AddRange(new object[] {
+            "Qualified Majority",
+            "Reinforced Qualified Majority",
+            "Simple Majority",
+            "Unanimity"});
+            this.comboBoxRule.Location = new System.Drawing.Point(572, 29);
+            this.comboBoxRule.Name = "comboBoxRule";
+            this.comboBoxRule.Size = new System.Drawing.Size(166, 21);
+            this.comboBoxRule.TabIndex = 62;
+            this.comboBoxRule.Text = "Qualified Majority";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(569, 7);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(92, 17);
+            this.label17.TabIndex = 61;
+            this.label17.Text = "Voting Rule";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(569, 96);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(105, 17);
+            this.label33.TabIndex = 63;
+            this.label33.Text = "Voting States";
+            // 
+            // textBoxYesStates
+            // 
+            this.textBoxYesStates.Location = new System.Drawing.Point(682, 128);
+            this.textBoxYesStates.Name = "textBoxYesStates";
+            this.textBoxYesStates.Size = new System.Drawing.Size(112, 20);
+            this.textBoxYesStates.TabIndex = 60;
+            this.textBoxYesStates.Text = "27";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(569, 197);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(42, 13);
+            this.label34.TabIndex = 66;
+            this.label34.Text = "Abstain";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(569, 164);
+            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(21, 13);
+            this.label35.TabIndex = 65;
+            this.label35.Text = "No";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(569, 131);
+            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(25, 13);
+            this.label36.TabIndex = 64;
+            this.label36.Text = "Yes";
+            // 
+            // textBoxNoStates
+            // 
+            this.textBoxNoStates.Location = new System.Drawing.Point(682, 161);
+            this.textBoxNoStates.Name = "textBoxNoStates";
+            this.textBoxNoStates.Size = new System.Drawing.Size(112, 20);
+            this.textBoxNoStates.TabIndex = 67;
+            this.textBoxNoStates.Text = "0";
+            // 
+            // textBoxAbStates
+            // 
+            this.textBoxAbStates.Location = new System.Drawing.Point(682, 194);
+            this.textBoxAbStates.Name = "textBoxAbStates";
+            this.textBoxAbStates.Size = new System.Drawing.Size(112, 20);
+            this.textBoxAbStates.TabIndex = 68;
+            this.textBoxAbStates.Text = "0";
+            // 
+            // textBoxAbPop
+            // 
+            this.textBoxAbPop.Location = new System.Drawing.Point(682, 326);
+            this.textBoxAbPop.Name = "textBoxAbPop";
+            this.textBoxAbPop.Size = new System.Drawing.Size(112, 20);
+            this.textBoxAbPop.TabIndex = 75;
+            this.textBoxAbPop.Text = "100%";
+            // 
+            // textBoxNoPop
+            // 
+            this.textBoxNoPop.Location = new System.Drawing.Point(682, 293);
+            this.textBoxNoPop.Name = "textBoxNoPop";
+            this.textBoxNoPop.Size = new System.Drawing.Size(112, 20);
+            this.textBoxNoPop.TabIndex = 74;
+            this.textBoxNoPop.Text = "0%";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(569, 329);
+            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(42, 13);
+            this.label37.TabIndex = 73;
+            this.label37.Text = "Abstain";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(569, 296);
+            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(21, 13);
+            this.label38.TabIndex = 72;
+            this.label38.Text = "No";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(569, 263);
+            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(25, 13);
+            this.label39.TabIndex = 71;
+            this.label39.Text = "Yes";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(569, 228);
+            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(136, 17);
+            this.label40.TabIndex = 70;
+            this.label40.Text = "Voting Population";
+            // 
+            // textBoxYesPop
+            // 
+            this.textBoxYesPop.Location = new System.Drawing.Point(682, 260);
+            this.textBoxYesPop.Name = "textBoxYesPop";
+            this.textBoxYesPop.Size = new System.Drawing.Size(112, 20);
+            this.textBoxYesPop.TabIndex = 69;
+            this.textBoxYesPop.Text = "100%";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(569, 360);
+            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(105, 17);
+            this.label41.TabIndex = 76;
+            this.label41.Text = "Voting Result";
+            // 
+            // labelResult
+            // 
+            this.labelResult.AutoSize = true;
+            this.labelResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResult.ForeColor = System.Drawing.Color.Lime;
+            this.labelResult.Location = new System.Drawing.Point(604, 392);
+            this.labelResult.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(190, 46);
+            this.labelResult.TabIndex = 77;
+            this.labelResult.Text = "Approved";
+            this.labelResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // VotingCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 521);
+            this.Controls.Add(this.labelResult);
+            this.Controls.Add(this.label41);
+            this.Controls.Add(this.textBoxAbPop);
+            this.Controls.Add(this.textBoxNoPop);
+            this.Controls.Add(this.label37);
+            this.Controls.Add(this.label38);
+            this.Controls.Add(this.label39);
+            this.Controls.Add(this.label40);
+            this.Controls.Add(this.textBoxYesPop);
+            this.Controls.Add(this.textBoxAbStates);
+            this.Controls.Add(this.textBoxNoStates);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.comboBoxRule);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.textBoxYesStates);
             this.Controls.Add(this.comboBoxItaly);
             this.Controls.Add(this.comboBoxLatvia);
             this.Controls.Add(this.comboBoxLithuania);
@@ -885,6 +1138,24 @@
         private System.Windows.Forms.ComboBox comboBoxSlovenia;
         private System.Windows.Forms.ComboBox comboBoxSpain;
         private System.Windows.Forms.ComboBox comboBoxSweden;
+        private System.Windows.Forms.ComboBox comboBoxRule;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox textBoxYesStates;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox textBoxNoStates;
+        private System.Windows.Forms.TextBox textBoxAbStates;
+        private System.Windows.Forms.TextBox textBoxAbPop;
+        private System.Windows.Forms.TextBox textBoxNoPop;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox textBoxYesPop;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label labelResult;
     }
 }
 

@@ -25,6 +25,9 @@ namespace VotingCalculator
             else if (comboBoxAustria.Text == "No") { NoStates++; NoPop += 1.98; }
             else { AbStates++; AbPop += 1.98; }
             Console.WriteLine(YesStates);
+            textBoxYesStates.Text = Convert.ToString(YesStates);
+            labelResult.Text = "Rejected";
+            labelResult.ForeColor = System.Drawing.Color.Red;
         }
 
         public VotingCalculator()
@@ -38,7 +41,7 @@ namespace VotingCalculator
 
         }
 
-        private void Austria_SelectedIndexChanged(object sender, EventArgs e)
+        private void Country_SelectedIndexChanged(object sender, EventArgs e)
         {
             Voting();
         }
