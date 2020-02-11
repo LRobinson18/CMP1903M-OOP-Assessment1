@@ -903,7 +903,7 @@
             this.textBoxAbPop.Name = "textBoxAbPop";
             this.textBoxAbPop.Size = new System.Drawing.Size(112, 20);
             this.textBoxAbPop.TabIndex = 75;
-            this.textBoxAbPop.Text = "100%";
+            this.textBoxAbPop.Text = "0%";
             // 
             // textBoxNoPop
             // 
