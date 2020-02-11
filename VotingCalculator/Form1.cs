@@ -10,91 +10,37 @@ using System.Windows.Forms;
 
 namespace VotingCalculator
 {
-    public partial class Form1 : Form
+    public partial class VotingCalculator : Form
     {
-        public Form1()
+        void Voting()
+        {
+            int YesStates = 0;
+            int NoStates = 0;
+            int AbStates = 0;
+            double YesPop = 0;
+            double NoPop = 0;
+            double AbPop = 0;
+
+            if (comboBoxAustria.Text == "Yes") { YesStates++; YesPop += 1.98; }
+            else if (comboBoxAustria.Text == "No") { NoStates++; NoPop += 1.98; }
+            else { AbStates++; AbPop += 1.98; }
+            Console.WriteLine(YesStates);
+        }
+
+        public VotingCalculator()
         {
             InitializeComponent();
         }
 
+        
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Austria_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
+            Voting();
         }
     }
 }
