@@ -57,13 +57,13 @@ namespace VotingCalculator
             else if (comboBoxFinland.Text == "No") { NoStates++; NoPop += 1.23; }
             else { AbStates++; AbPop += 1.23; }
 
-            if (comboBoxFrance.Text == "Yes") { YesStates++; YesPop += 14.98; }
-            else if (comboBoxFrance.Text == "No") { NoStates++; NoPop += 14.98; }
-            else { AbStates++; AbPop += 14.98; }
+            if (comboBoxFrance.Text == "Yes") { YesStates++; YesPop += 14.97; }
+            else if (comboBoxFrance.Text == "No") { NoStates++; NoPop += 14.97; }
+            else { AbStates++; AbPop += 14.97; }
 
-            if (comboBoxGermany.Text == "Yes") { YesStates++; YesPop += 18.54; }
-            else if (comboBoxGermany.Text == "No") { NoStates++; NoPop += 18.54; }
-            else { AbStates++; AbPop += 18.54; }
+            if (comboBoxGermany.Text == "Yes") { YesStates++; YesPop += 18.53; }
+            else if (comboBoxGermany.Text == "No") { NoStates++; NoPop += 18.53; }
+            else { AbStates++; AbPop += 18.53; }
 
             if (comboBoxGreece.Text == "Yes") { YesStates++; YesPop += 2.40; }
             else if (comboBoxGreece.Text == "No") { NoStates++; NoPop += 2.40; }
@@ -77,9 +77,9 @@ namespace VotingCalculator
             else if (comboBoxIreland.Text == "No") { NoStates++; NoPop += 1.10; }
             else { AbStates++; AbPop += 1.10; }
 
-            if (comboBoxItaly.Text == "Yes") { YesStates++; YesPop += 13.65; }
-            else if (comboBoxItaly.Text == "No") { NoStates++; NoPop += 13.65; }
-            else { AbStates++; AbPop += 13.65; }
+            if (comboBoxItaly.Text == "Yes") { YesStates++; YesPop += 13.64; }
+            else if (comboBoxItaly.Text == "No") { NoStates++; NoPop += 13.64; }
+            else { AbStates++; AbPop += 13.64; }
 
             if (comboBoxLatvia.Text == "Yes") { YesStates++; YesPop += 0.43; }
             else if (comboBoxLatvia.Text == "No") { NoStates++; NoPop += 0.43; }
@@ -116,6 +116,10 @@ namespace VotingCalculator
             if (comboBoxSlovakia.Text == "Yes") { YesStates++; YesPop += 1.22; }
             else if (comboBoxSlovakia.Text == "No") { NoStates++; NoPop += 1.22; }
             else { AbStates++; AbPop += 1.22; }
+
+            if (comboBoxSlovenia.Text == "Yes") { YesStates++; YesPop += 0.47; }
+            else if (comboBoxSlovenia.Text == "No") { NoStates++; NoPop += 0.47; }
+            else { AbStates++; AbPop += 0.47; }
 
             if (comboBoxSpain.Text == "Yes") { YesStates++; YesPop += 10.49; }
             else if (comboBoxSpain.Text == "No") { NoStates++; NoPop += 10.49; }
@@ -169,7 +173,7 @@ namespace VotingCalculator
 
             if (comboBoxRule.Text == "Unanimity")
             {
-                if (YesStates > 27)
+                if (YesStates == 27 - AbStates)
                 {
                     labelResult.Text = "Approved";
                     labelResult.ForeColor = System.Drawing.Color.LimeGreen;
@@ -203,6 +207,11 @@ namespace VotingCalculator
         private void Country_SelectedIndexChanged(object sender, EventArgs e)
         {
             Voting();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
