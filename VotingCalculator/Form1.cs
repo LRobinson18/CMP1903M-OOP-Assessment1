@@ -12,6 +12,7 @@ namespace VotingCalculator
 {
     public partial class VotingCalculator : Form
     {
+        
         void Voting()
         {
             int YesStates = 0;
@@ -20,114 +21,44 @@ namespace VotingCalculator
             double YesPop = 0;
             double NoPop = 0;
             double AbPop = 0;
-
-            if (comboBoxAustria.Text == "Yes") { YesStates++; YesPop += 1.98; }
-            else if (comboBoxAustria.Text == "No") { NoStates++; NoPop += 1.98; }
-            else { AbStates++; AbPop += 1.98; }
-
-            if (comboBoxBelgium.Text == "Yes") { YesStates++; YesPop += 2.56; }
-            else if (comboBoxBelgium.Text == "No") { NoStates++; NoPop += 2.56; }
-            else { AbStates++; AbPop += 2.56; }
-
-            if (comboBoxBulgaria.Text == "Yes") { YesStates++; YesPop += 1.56; }
-            else if (comboBoxBulgaria.Text == "No") { NoStates++; NoPop += 1.56; }
-            else { AbStates++; AbPop += 1.56; }
-
-            if (comboBoxCroatia.Text == "Yes") { YesStates++; YesPop += 0.91; }
-            else if (comboBoxCroatia.Text == "No") { NoStates++; NoPop += 0.91; }
-            else { AbStates++; AbPop += 0.91; }
-
-            if (comboBoxCyprus.Text == "Yes") { YesStates++; YesPop += 0.20; }
-            else if (comboBoxCyprus.Text == "No") { NoStates++; NoPop += 0.20; }
-            else { AbStates++; AbPop += 0.20; }
-
-            if (comboBoxCzechRepublic.Text == "Yes") { YesStates++; YesPop += 2.35; }
-            else if (comboBoxCzechRepublic.Text == "No") { NoStates++; NoPop += 2.35; }
-            else { AbStates++; AbPop += 2.35; }
-
-            if (comboBoxDenmark.Text == "Yes") { YesStates++; YesPop += 1.30; }
-            else if (comboBoxDenmark.Text == "No") { NoStates++; NoPop += 1.30; }
-            else { AbStates++; AbPop += 1.30; }
-
-            if (comboBoxEstonia.Text == "Yes") { YesStates++; YesPop += 0.30; }
-            else if (comboBoxEstonia.Text == "No") { NoStates++; NoPop += 0.30; }
-            else { AbStates++; AbPop += 0.30; }
-
-            if (comboBoxFinland.Text == "Yes") { YesStates++; YesPop += 1.23; }
-            else if (comboBoxFinland.Text == "No") { NoStates++; NoPop += 1.23; }
-            else { AbStates++; AbPop += 1.23; }
-
-            if (comboBoxFrance.Text == "Yes") { YesStates++; YesPop += 14.97; }
-            else if (comboBoxFrance.Text == "No") { NoStates++; NoPop += 14.97; }
-            else { AbStates++; AbPop += 14.97; }
-
-            if (comboBoxGermany.Text == "Yes") { YesStates++; YesPop += 18.53; }
-            else if (comboBoxGermany.Text == "No") { NoStates++; NoPop += 18.53; }
-            else { AbStates++; AbPop += 18.53; }
-
-            if (comboBoxGreece.Text == "Yes") { YesStates++; YesPop += 2.40; }
-            else if (comboBoxGreece.Text == "No") { NoStates++; NoPop += 2.40; }
-            else { AbStates++; AbPop += 2.40; }
-
-            if (comboBoxHungary.Text == "Yes") { YesStates++; YesPop += 2.18; }
-            else if (comboBoxHungary.Text == "No") { NoStates++; NoPop += 2.18; }
-            else { AbStates++; AbPop += 2.18; }
-
-            if (comboBoxIreland.Text == "Yes") { YesStates++; YesPop += 1.10; }
-            else if (comboBoxIreland.Text == "No") { NoStates++; NoPop += 1.10; }
-            else { AbStates++; AbPop += 1.10; }
-
-            if (comboBoxItaly.Text == "Yes") { YesStates++; YesPop += 13.64; }
-            else if (comboBoxItaly.Text == "No") { NoStates++; NoPop += 13.64; }
-            else { AbStates++; AbPop += 13.64; }
-
-            if (comboBoxLatvia.Text == "Yes") { YesStates++; YesPop += 0.43; }
-            else if (comboBoxLatvia.Text == "No") { NoStates++; NoPop += 0.43; }
-            else { AbStates++; AbPop += 0.43; }
-
-            if (comboBoxLithuania.Text == "Yes") { YesStates++; YesPop += 0.62; }
-            else if (comboBoxLithuania.Text == "No") { NoStates++; NoPop += 0.62; }
-            else { AbStates++; AbPop += 0.62; }
-
-            if (comboBoxLuxembourg.Text == "Yes") { YesStates++; YesPop += 0.14; }
-            else if (comboBoxLuxembourg.Text == "No") { NoStates++; NoPop += 0.14; }
-            else { AbStates++; AbPop += 0.14; }
-
-            if (comboBoxMalta.Text == "Yes") { YesStates++; YesPop += 0.11; }
-            else if (comboBoxMalta.Text == "No") { NoStates++; NoPop += 0.11; }
-            else { AbStates++; AbPop += 0.11; }
-
-            if (comboBoxNetherlands.Text == "Yes") { YesStates++; YesPop += 3.89; }
-            else if (comboBoxNetherlands.Text == "No") { NoStates++; NoPop += 3.89; }
-            else { AbStates++; AbPop += 3.89; }
-
-            if (comboBoxPoland.Text == "Yes") { YesStates++; YesPop += 8.49; }
-            else if (comboBoxPoland.Text == "No") { NoStates++; NoPop += 8.49; }
-            else { AbStates++; AbPop += 8.49; }
-
-            if (comboBoxPortugal.Text == "Yes") { YesStates++; YesPop += 2.30; }
-            else if (comboBoxPortugal.Text == "No") { NoStates++; NoPop += 2.30; }
-            else { AbStates++; AbPop += 2.30; }
-
-            if (comboBoxRomania.Text == "Yes") { YesStates++; YesPop += 4.34; }
-            else if (comboBoxRomania.Text == "No") { NoStates++; NoPop += 4.34; }
-            else { AbStates++; AbPop += 4.34; }
-
-            if (comboBoxSlovakia.Text == "Yes") { YesStates++; YesPop += 1.22; }
-            else if (comboBoxSlovakia.Text == "No") { NoStates++; NoPop += 1.22; }
-            else { AbStates++; AbPop += 1.22; }
-
-            if (comboBoxSlovenia.Text == "Yes") { YesStates++; YesPop += 0.47; }
-            else if (comboBoxSlovenia.Text == "No") { NoStates++; NoPop += 0.47; }
-            else { AbStates++; AbPop += 0.47; }
-
-            if (comboBoxSpain.Text == "Yes") { YesStates++; YesPop += 10.49; }
-            else if (comboBoxSpain.Text == "No") { NoStates++; NoPop += 10.49; }
-            else { AbStates++; AbPop += 10.49; }
-
-            if (comboBoxSweden.Text == "Yes") { YesStates++; YesPop += 2.29; }
-            else if (comboBoxSweden.Text == "No") { NoStates++; NoPop += 2.29; }
-            else { AbStates++; AbPop += 2.29; }
+            var Countries = new Dictionary<System.Windows.Forms.ComboBox,double>()
+            {
+                {comboBoxAustria,1.98},
+                {comboBoxBelgium,2.56},
+                {comboBoxBulgaria,1.56},
+                {comboBoxCroatia,0.91},
+                {comboBoxCyprus,0.20},
+                {comboBoxCzechRepublic,2.35},
+                {comboBoxDenmark,1.30},
+                {comboBoxEstonia,0.30},
+                {comboBoxFinland,1.23},
+                {comboBoxFrance,14.97},
+                {comboBoxGermany,18.53},
+                {comboBoxGreece,2.40},
+                {comboBoxHungary,2.18},
+                {comboBoxIreland,1.10},
+                {comboBoxItaly,13.64},
+                {comboBoxLatvia,0.43},
+                {comboBoxLithuania,0.62},
+                {comboBoxLuxembourg,0.14},
+                {comboBoxMalta,0.11},
+                {comboBoxNetherlands,3.89},
+                {comboBoxPoland,8.49},
+                {comboBoxPortugal,2.30},
+                {comboBoxRomania,4.34},
+                {comboBoxSlovakia,1.22},
+                {comboBoxSlovenia,0.47},
+                {comboBoxSpain,10.49},
+                {comboBoxSweden,2.29}
+            };
+            
+            foreach (KeyValuePair<System.Windows.Forms.ComboBox,double> Country in Countries)
+            {
+                var choice = (Country.Key).Text;
+                if (choice == "Yes") {YesStates++; YesPop += Country.Value;}
+                else if (choice == "No") { NoStates++; NoPop += Country.Value;}
+                else { AbStates++; AbPop += Country.Value;}
+            }
 
             if (comboBoxRule.Text == "Qualified Majority")
             {
