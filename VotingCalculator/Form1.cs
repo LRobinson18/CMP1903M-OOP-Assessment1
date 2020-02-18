@@ -15,6 +15,9 @@ namespace VotingCalculator
         
         void Voting()
         {
+            /*State variables initially set to 0 (integer)
+              Population variables initially set to 0 (floating point type - 'double')*/
+            
             int YesStates = 0;
             int NoStates = 0;
             int AbStates = 0;
@@ -23,6 +26,8 @@ namespace VotingCalculator
             double AbPop = 0;
             var Countries = new Dictionary<System.Windows.Forms.ComboBox,double>()
             {
+                //Dictionary containing all EU countries and their respective percentages
+
                 {comboBoxAustria,1.98},
                 {comboBoxBelgium,2.56},
                 {comboBoxBulgaria,1.56},
@@ -62,6 +67,9 @@ namespace VotingCalculator
 
             if (comboBoxRule.Text == "Qualified Majority")
             {
+                /* If Yes States are greater than 15 and Yes Population is greater than 65% - Qualified Majority is Approved
+                   otherwise Qualified Majority is Rejected */
+                
                 if (YesStates > 15 && YesPop > 65)
                 {
                     labelResult.Text = "Approved";
@@ -76,6 +84,9 @@ namespace VotingCalculator
 
             if (comboBoxRule.Text == "Reinforced Qualified Majority")
             {
+                /* If Yes States are greater than 20 and Yes Population is greater than 65% - Reinforced Qualified Majority is Approved
+                   otherwise Reinforced Qualified Majority is Rejected */
+
                 if (YesStates > 20 && YesPop > 65)
                 {
                     labelResult.Text = "Approved";
@@ -90,6 +101,9 @@ namespace VotingCalculator
 
             if (comboBoxRule.Text == "Simple Majority")
             {
+                /* If Yes States are greater than 14 - Simple Majority is Approved
+                   otherwise Simple Majority is Rejected */
+                
                 if (YesStates > 14)
                 {
                     labelResult.Text = "Approved";
@@ -104,6 +118,9 @@ namespace VotingCalculator
 
             if (comboBoxRule.Text == "Unanimity")
             {
+                /* If all states vote "Yes" or "Abstain" - Unanimity is Approved
+                   If 1 or more states vote "No" - Unanimity is Rejected */
+                
                 if (YesStates == 27 - AbStates)
                 {
                     labelResult.Text = "Approved";
@@ -115,6 +132,8 @@ namespace VotingCalculator
                     labelResult.ForeColor = System.Drawing.Color.Red;
                 }
             }
+
+            //Converts the State/Population text to a String Data Type
 
             textBoxYesStates.Text = Convert.ToString(YesStates);
             textBoxNoStates.Text = Convert.ToString(NoStates);
