@@ -26,7 +26,7 @@ namespace VotingCalculator
             double AbPop = 0;
             var Countries = new Dictionary<System.Windows.Forms.ComboBox,double>()
             {
-                //Dictionary containing all EU countries and their respective percentages
+                //Dictionary containing all EU countries' buttons and their respective population percentages
 
                 {comboBoxAustria,1.98},
                 {comboBoxBelgium,2.56},
@@ -57,6 +57,7 @@ namespace VotingCalculator
                 {comboBoxSweden,2.29}
             };
             
+            // for loop through dictionary to control voting choices
             foreach (KeyValuePair<System.Windows.Forms.ComboBox,double> Country in Countries)
             {
                 var choice = (Country.Key).Text;
