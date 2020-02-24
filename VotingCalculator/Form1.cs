@@ -15,6 +15,7 @@ namespace VotingCalculator
         
         void Voting()
         {
+            VotingRules vr = new VotingRules();
             int YesStates = 0;
             int NoStates = 0;
             int AbStates = 0;
@@ -62,58 +63,30 @@ namespace VotingCalculator
 
             if (comboBoxRule.Text == "Qualified Majority")
             {
-                if (YesStates > 15 && YesPop > 65)
-                {
-                    labelResult.Text = "Approved";
-                    labelResult.ForeColor = System.Drawing.Color.LimeGreen;
-                }
-                else
-                {
-                    labelResult.Text = "Rejected";
-                    labelResult.ForeColor = System.Drawing.Color.Red;
-                }
+                var result = vr.QualifiedMajority(YesStates, YesPop);
+                labelResult.Text = result[0];
+                labelResult.ForeColor = System.Drawing.Color.FromName(result[1]);
             }
 
             if (comboBoxRule.Text == "Reinforced Qualified Majority")
             {
-                if (YesStates > 20 && YesPop > 65)
-                {
-                    labelResult.Text = "Approved";
-                    labelResult.ForeColor = System.Drawing.Color.LimeGreen;
-                }
-                else
-                {
-                    labelResult.Text = "Rejected";
-                    labelResult.ForeColor = System.Drawing.Color.Red;
-                }
+                var result = vr.ReinforcedQualifiedMajority(YesStates, YesPop);
+                labelResult.Text = result[0];
+                labelResult.ForeColor = System.Drawing.Color.FromName(result[1]);
             }
 
             if (comboBoxRule.Text == "Simple Majority")
             {
-                if (YesStates > 14)
-                {
-                    labelResult.Text = "Approved";
-                    labelResult.ForeColor = System.Drawing.Color.LimeGreen;
-                }
-                else
-                {
-                    labelResult.Text = "Rejected";
-                    labelResult.ForeColor = System.Drawing.Color.Red;
-                }
+                var result = vr.SimpleMajority(YesStates);
+                labelResult.Text = result[0];
+                labelResult.ForeColor = System.Drawing.Color.FromName(result[1]);
             }
 
             if (comboBoxRule.Text == "Unanimity")
             {
-                if (YesStates == 27 - AbStates)
-                {
-                    labelResult.Text = "Approved";
-                    labelResult.ForeColor = System.Drawing.Color.LimeGreen;
-                }
-                else
-                {
-                    labelResult.Text = "Rejected";
-                    labelResult.ForeColor = System.Drawing.Color.Red;
-                }
+                var result = vr.QualifiedMajority(YesStates, AbStates);
+                labelResult.Text = result[0];
+                labelResult.ForeColor = System.Drawing.Color.FromName(result[1]);
             }
 
             textBoxYesStates.Text = Convert.ToString(YesStates);
@@ -138,11 +111,6 @@ namespace VotingCalculator
         private void Country_SelectedIndexChanged(object sender, EventArgs e)
         {
             Voting();
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
