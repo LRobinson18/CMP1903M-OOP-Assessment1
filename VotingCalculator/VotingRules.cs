@@ -8,6 +8,8 @@ namespace VotingCalculator
 {
     class VotingRules
     {
+        //creating a list allows the methods to return 2 results, both necessary for the final outcome
+        // the first result is the voting outcome and the last is the outcome message's colour
         public List<string> QualifiedMajority(int YesStates, double YesPop)
         {
             List<string> result = new List<string>();
