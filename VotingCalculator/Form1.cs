@@ -84,7 +84,7 @@ namespace VotingCalculator
 
             if (comboBoxRule.Text == "Unanimity")
             {
-                var result = vr.QualifiedMajority(YesStates, AbStates);
+                var result = vr.Unanimity(YesStates, AbStates);
                 labelResult.Text = result[0];
                 labelResult.ForeColor = System.Drawing.Color.FromName(result[1]);
             }
