@@ -17,7 +17,8 @@ namespace VotingCalculator
         {
             /*State variables initially set to 0 (integer)
               Population variables initially set to 0 (floating point type - 'double')*/
-            
+              
+            VotingRules vr = new VotingRules();
             int YesStates = 0;
             int NoStates = 0;
             int AbStates = 0;
@@ -70,72 +71,39 @@ namespace VotingCalculator
             {
                 /* If Yes States are greater than 15 and Yes Population is greater than 65% - Qualified Majority is Approved
                    otherwise Qualified Majority is Rejected */
-                
-                if (YesStates > 15 && YesPop > 65)
-                {
-                    labelResult.Text = "Approved";
-                    labelResult.ForeColor = System.Drawing.Color.LimeGreen;
-                }
-                else
-                {
-                    labelResult.Text = "Rejected";
-                    labelResult.ForeColor = System.Drawing.Color.Red;
-                }
+                var result = vr.QualifiedMajority(YesStates, YesPop);
+                labelResult.Text = result[0];
+                labelResult.ForeColor = System.Drawing.Color.FromName(result[1]);
             }
 
             if (comboBoxRule.Text == "Reinforced Qualified Majority")
             {
-                /* If Yes States are greater than 20 and Yes Population is greater than 65% - Reinforced Qualified Majority is Approved
+                 /* If Yes States are greater than 20 and Yes Population is greater than 65% - Reinforced Qualified Majority is Approved
                    otherwise Reinforced Qualified Majority is Rejected */
-
-                if (YesStates > 20 && YesPop > 65)
-                {
-                    labelResult.Text = "Approved";
-                    labelResult.ForeColor = System.Drawing.Color.LimeGreen;
-                }
-                else
-                {
-                    labelResult.Text = "Rejected";
-                    labelResult.ForeColor = System.Drawing.Color.Red;
-                }
+                var result = vr.ReinforcedQualifiedMajority(YesStates, YesPop);
+                labelResult.Text = result[0];
+                labelResult.ForeColor = System.Drawing.Color.FromName(result[1]);
             }
 
             if (comboBoxRule.Text == "Simple Majority")
             {
                 /* If Yes States are greater than 14 - Simple Majority is Approved
                    otherwise Simple Majority is Rejected */
-                
-                if (YesStates > 14)
-                {
-                    labelResult.Text = "Approved";
-                    labelResult.ForeColor = System.Drawing.Color.LimeGreen;
-                }
-                else
-                {
-                    labelResult.Text = "Rejected";
-                    labelResult.ForeColor = System.Drawing.Color.Red;
-                }
+                var result = vr.SimpleMajority(YesStates);
+                labelResult.Text = result[0];
+                labelResult.ForeColor = System.Drawing.Color.FromName(result[1]);
             }
 
             if (comboBoxRule.Text == "Unanimity")
             {
                 /* If all states vote "Yes" or "Abstain" - Unanimity is Approved
                    If 1 or more states vote "No" - Unanimity is Rejected */
-                
-                if (YesStates == 27 - AbStates)
-                {
-                    labelResult.Text = "Approved";
-                    labelResult.ForeColor = System.Drawing.Color.LimeGreen;
-                }
-                else
-                {
-                    labelResult.Text = "Rejected";
-                    labelResult.ForeColor = System.Drawing.Color.Red;
-                }
+                var result = vr.Unanimity(YesStates, AbStates);
+                labelResult.Text = result[0];
+                labelResult.ForeColor = System.Drawing.Color.FromName(result[1]);
             }
-
+            
             //Converts the State/Population text to a String Data Type
-
             textBoxYesStates.Text = Convert.ToString(YesStates);
             textBoxNoStates.Text = Convert.ToString(NoStates);
             textBoxAbStates.Text = Convert.ToString(AbStates);
@@ -158,11 +126,6 @@ namespace VotingCalculator
         private void Country_SelectedIndexChanged(object sender, EventArgs e)
         {
             Voting();
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
